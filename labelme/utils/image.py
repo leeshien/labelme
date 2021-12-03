@@ -72,7 +72,8 @@ def apply_exif_orientation(image):
     }
 
     orientation = exif.get("Orientation", None)
-
+    print('exif: ', exif)
+    print('orientation: ', orientation)
     if orientation == 1:
         # do nothing
         return image
