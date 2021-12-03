@@ -53,7 +53,7 @@ class LabelFile(object):
             return
 
         # apply orientation to image according to exif
-        image_pil = utils.apply_exif_orientation(image_pil)
+#         image_pil = utils.apply_exif_orientation(image_pil)
 
         with io.BytesIO() as f:
             ext = osp.splitext(filename)[1].lower()
